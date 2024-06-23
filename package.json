@@ -1,0 +1,22 @@
+{
+    "name": "fullstack-app",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+      "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\"",
+      "build": "npm run build:frontend && npm run build:backend",
+      "start": "npm run start:backend",
+      "lint": "eslint . --ext js,jsx",
+      "preview": "vite preview",
+      "dev:frontend": "cd frontend && npm run dev",
+      "build:frontend": "cd frontend && npm run build",
+      "dev:backend": "cd backend && npm run start",
+      "build:backend": "cd backend && npm run build",
+      "start:backend": "cd backend && npm start"
+    },
+    "dependencies": {
+      "concurrently": "^7.0.0"
+    },
+    "devDependencies": {}
+  }
+  
