@@ -37,7 +37,7 @@ const SurveyForm = () => {
     e.preventDefault();
     if (validate(formData)) {
       try {
-        const response = await fetch(`http://localhost:5000/api/questions/${formData.surveyTopic}`);
+        const response = await fetch(`https://internship-form-3.vercel.app/api/questions/${formData.surveyTopic}`);
         if (!response.ok) {
           throw new Error('Failed to fetch questions');
         }
